@@ -1,7 +1,7 @@
-import TopBar from "../shared/topbar/topbar.view";
+import TopNav from "../shared/topnav/topnav.view";
 
 const ItemDetailPage = () => {
-	return <TopBar />;
+	return <TopNav />;
 };
 
 export default ItemDetailPage;
