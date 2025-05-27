@@ -13,6 +13,8 @@ export const TopNav = styled.div`
 export const TopNavWrapper = styled.div`
 	width: 100%;
 	max-width: 90vw;
+	display: flex;
+	align-items: center;
 `;
 
 export const Logo = styled.a`
@@ -26,4 +28,15 @@ export const Logo = styled.a`
 	left: 0;
 	top: 0;
 	background-size: contain;
+`;
+
+export const ActionsWrapper = styled.div`
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+
+	*:not(:last-of-type) {
+		margin-right: 8px;
+	}
 `;
