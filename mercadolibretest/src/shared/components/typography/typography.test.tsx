@@ -1,6 +1,7 @@
 import { screen } from "@testing-library/react";
 import Typography from "./typography.view";
-import renderWithProviders from "../../testing/render-with-providers";
+import renderWithProviders from "../../../tests/render-with-providers";
+import { describe, expect, it } from "vitest";
 
 describe("Typography component", () => {
 	it("renders children correctly", () => {

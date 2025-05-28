@@ -1,6 +1,7 @@
-import { screen, fireEvent } from "@testing-library/react";
 import Button from "./button.view";
-import renderWithProviders from "../../testing/render-with-providers";
+import renderWithProviders from "../../../tests/render-with-providers";
+import { vitest, expect, describe, it } from "vitest";
+import { fireEvent, screen } from "@testing-library/dom";
 
 describe("Button component", () => {
 	it("renders with children text", () => {
@@ -13,11 +14,11 @@ describe("Button component", () => {
 		renderWithProviders(<Button disabled>Disabled</Button>);
 
 		const button = screen.getByRole("button");
-		expect(button).toHaveProperty("disabled", "");
+		expect(button).toHaveProperty("disabled", true);
 	});
 
 	it("calls onClick when clicked", () => {
-		const handleClick = jest.fn();
+		const handleClick = vitest.fn();
 
 		renderWithProviders(<Button onClick={handleClick}>Click me</Button>);
 

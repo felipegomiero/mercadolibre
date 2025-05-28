@@ -1,6 +1,7 @@
 import { screen, fireEvent } from "@testing-library/react";
 import Breadcrumbs, { type IBreadcrumbItem } from "./breadcrumbs.view";
-import renderWithProviders from "../../testing/render-with-providers";
+import renderWithProviders from "../../../tests/render-with-providers";
+import { describe, expect, it, vitest } from "vitest";
 
 describe("Breadcrumbs component", () => {
 	const mockItems: IBreadcrumbItem[] = [
@@ -32,7 +33,7 @@ describe("Breadcrumbs component", () => {
 	});
 
 	it("calls onClick when breadcrumb item is clicked", () => {
-		const handleClick = jest.fn();
+		const handleClick = vitest.fn();
 		const itemsWithClick: IBreadcrumbItem[] = [
 			{ label: "Home", onClick: handleClick },
 			{ label: "Product" },

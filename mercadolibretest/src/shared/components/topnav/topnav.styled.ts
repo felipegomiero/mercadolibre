@@ -7,7 +7,7 @@ export const TopNav = styled.div`
 	justify-content: center;
 	background-color: ${({ theme }: { theme: Theme }) => theme.primary[500]};
 	width: 100%;
-	padding: 8px 12px;
+	padding: 8px 0;
 `;
 
 export const TopNavWrapper = styled.div`

@@ -11,10 +11,14 @@ const ItemDetailPage = () => {
 		{ label: "Samsung" },
 	];
 	return (
-		<Styled.Wrapper>
+		<>
 			<TopNav />
-			<Breadcrumbs items={breadrCrumbsItems} />
-		</Styled.Wrapper>
+			<Styled.Wrapper>
+				<Styled.Content>
+					<Breadcrumbs items={breadrCrumbsItems} />
+				</Styled.Content>
+			</Styled.Wrapper>
+		</>
 	);
 };
 
