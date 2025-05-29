@@ -1,5 +1,5 @@
 import { SvgShoppingCartIcon } from "../../../assets/icons";
-import Button from "../button/button.view";
+import Button from "../../../shared/components/button/button.view";
 import * as Styled from "./topnav.styled";
 
 const TopNav = () => {

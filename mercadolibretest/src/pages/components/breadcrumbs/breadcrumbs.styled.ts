@@ -1,8 +1,12 @@
 import type { Theme } from "@emotion/react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-import Typography from "../typography/typography.view";
-import pxToRem from "../../utils/px-to-rem";
+import Typography from "../../../shared/components/typography/typography.view";
+import pxToRem from "../../../shared/utils/px-to-rem";
+
+export const Wrapper = styled.div`
+	display: flex;
+`;
 
 export const Ol = styled.ol`
 	list-style: none;
@@ -19,16 +23,16 @@ export const Li = styled.li`
 
 export const LinkA = styled(Link)`
 	text-decoration: none;
-	color: ${({ theme }: { theme: Theme }) => theme.primary[400]};
+	color: ${({ theme }: { theme: Theme }) => theme.secondary[500]};
 `;
 
-export const Separator = styled.span`
+export const BreadcrumbSeparator = styled.span`
 	margin: 0 0.5rem;
-	color: white;
+	color: ${({ theme }: { theme: Theme }) => theme.neutral[900]};
 `;
 
 export const Text = styled(Typography)`
 	font-size: ${pxToRem(14)};
 	color: ${({ theme, isLast }: { theme: Theme; isLast: boolean }) =>
-		!isLast ? theme.secondary[500] : theme.neutral[500]};
+		!isLast ? theme.secondary[500] : theme.neutral[900]};
 `;

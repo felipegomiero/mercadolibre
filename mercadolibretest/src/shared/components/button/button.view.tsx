@@ -7,6 +7,8 @@ const Button: React.FC<IButtonProps> = ({
 	variant = "secondary",
 	disabled = false,
 	type = "button",
+	hasHover = true,
+	onlyText = false,
 	onClick,
 }) => {
 	const theme = useTheme();
@@ -16,6 +18,8 @@ const Button: React.FC<IButtonProps> = ({
 			type={type}
 			disabled={disabled}
 			theme={theme}
+			hasHover={hasHover}
+			onlyText={onlyText}
 			onClick={onClick}>
 			{children}
 		</Styled.Button>
