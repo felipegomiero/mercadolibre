@@ -1,5 +1,6 @@
 const SvgShoppingCartIcon = ({ size = 26, color = "currentColor" }) => (
 	<svg
+		data-testid="shopping-cart-icon"
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
 		height={size}

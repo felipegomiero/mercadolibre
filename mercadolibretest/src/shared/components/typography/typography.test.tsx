@@ -6,7 +6,7 @@ import { describe, expect, it } from "vitest";
 describe("Typography component", () => {
 	it("renders children correctly", () => {
 		renderWithProviders(<Typography>Test Text</Typography>);
-		expect(screen.getByText("Test Text")).toBeTruthy();
+		expect(screen.getByText("Test Text")).toBeInTheDocument();
 	});
 
 	it('renders with correct HTML tag when "as" prop is used', () => {

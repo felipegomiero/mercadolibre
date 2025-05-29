@@ -7,7 +7,7 @@ describe("Button component", () => {
 	it("renders with children text", () => {
 		renderWithProviders(<Button>Click me</Button>);
 
-		expect(screen.getByText("Click me")).toBeTruthy();
+		expect(screen.getByText("Click me")).toBeInTheDocument();
 	});
 
 	it("renders disabled when specified", () => {

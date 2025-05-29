@@ -4,14 +4,9 @@ import type { Theme } from "@emotion/react";
 import pxToRem from "../../utils/px-to-rem";
 
 export const GenericTextComponent = styled.span<ITypographyProps>(
-	({
-		theme,
-		color,
-		margin,
-		pxFontSize,
-	}: ITypographyProps & { theme: Theme }) => `
-	color: ${color || theme.neutral[900]};
+	({ color, margin, pxFontSize }: ITypographyProps & { theme: Theme }) => `
+	color: ${color || "white"};
 	margin: ${margin || "0"};
-	font-size: ${pxToRem(pxFontSize || 16)};
+	${pxFontSize ? `font-size: ${pxToRem(pxFontSize || 16)}` : ""};
 `
 );

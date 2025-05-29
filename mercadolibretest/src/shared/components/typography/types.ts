@@ -3,5 +3,5 @@ export interface ITypographyProps {
 	children: React.ReactNode;
 	color?: string;
 	margin?: string;
-	pxFontSize?: number;
+	pxFontSize?: number | null;
 }

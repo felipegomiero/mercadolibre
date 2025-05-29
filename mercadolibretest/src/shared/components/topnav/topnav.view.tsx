@@ -6,11 +6,12 @@ const TopNav = () => {
 	return (
 		<Styled.TopNav>
 			<Styled.TopNavWrapper>
-				<Styled.Logo />
+				<Styled.Logo data-testid="logo" />
 
 				<Styled.ActionsWrapper>
+					<Button variant="ghost">Minha conta</Button>
 					<Button disabled variant="ghost">
-						Minha conta
+						Compras
 					</Button>
 					<Button variant="ghost">
 						<SvgShoppingCartIcon />

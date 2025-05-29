@@ -13,9 +13,9 @@ describe("Breadcrumbs component", () => {
 	it("renders all breadcrumb items", () => {
 		renderWithProviders(<Breadcrumbs items={mockItems} />);
 
-		expect(screen.getByText("Home")).toBeTruthy();
-		expect(screen.getByText("Category")).toBeTruthy();
-		expect(screen.getByText("Product")).toBeTruthy();
+		expect(screen.getByText("Home")).toBeInTheDocument();
+		expect(screen.getByText("Category")).toBeInTheDocument();
+		expect(screen.getByText("Product")).toBeInTheDocument();
 	});
 
 	it("renders correct number of separators", () => {
