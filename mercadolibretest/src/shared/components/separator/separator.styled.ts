@@ -2,16 +2,16 @@ import styled from "@emotion/styled";
 import type { ISeparator } from "./types";
 
 export const Separator = styled.div(
-	({ vertical, margin, color }: ISeparator) => `
+	({ vertical, margin, color, thickness }: ISeparator) => `
 	${
 		vertical
 			? `
-		width: 1px;
+		width: ${thickness};
 		display: inline-block;
 	`
 			: `
 		width: 100%;
-  	height: 1px;
+  	height: ${thickness};
 	`
 	}
   background-color: ${color};

@@ -11,7 +11,11 @@ export const mercadoLibrePalette = {
 	},
 	neutral: {
 		500: "#E5E5E5",
-		600: "#333333",
+		600: "#8C8C8C",
+		700: "#333333",
 		900: "#1A1A1A",
+	},
+	success: {
+		500: "#00a650",
 	},
 };

@@ -6,9 +6,11 @@ import TopNav from "./components/topnav/topnav.view";
 import Details from "./components/details/details.view";
 import * as Styled from "./item-detail.page.styled";
 import type { IDetail } from "./types";
+import Acquisition from "./components/acquisition/acquisition.view";
+import { Separator } from "../shared/components";
 
 const ItemDetailPage = () => {
-	const breadrCrumbsItems: IBreadcrumbItem[] = [
+	const breadCrumbsItems: IBreadcrumbItem[] = [
 		{ label: "Celulares e telefones" },
 		{ label: "Celulares e smartphones" },
 		{ label: "Samsung" },
@@ -17,20 +19,30 @@ const ItemDetailPage = () => {
 	const item: IDetail = {
 		title: "Samsung Galaxy S24 Galaxy Ai 256GB Preto 8GB RAM",
 		price: "R$ 3.438",
+		stock: 56,
+		shippingPromSecLeft: 104500,
 		image:
-			"https://http2.mlstatic.com/D_NQ_NP_715415-MLA83864720212_042025-O.webp",
+			"https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-s24-62-galaxy-ai-256gb-preto-5g-8gb-ram-cam-tripla-50mp-selfie-12mp-bateria-4000mah-dual-chip/magazineluiza/238095300/e7d6a769c701da9491194643ae02c865.jpg",
 	};
 
 	return (
 		<>
 			<TopNav />
 			<Styled.Content>
-				<Breadcrumbs items={breadrCrumbsItems} />
+				<Breadcrumbs items={breadCrumbsItems} />
 
-				<Styled.Wrapper>
-					{item.image && <ImgMagnifier alt={item.title} src={item.image} />}
+				<Styled.ItemWrapper>
+					{item.image && <ImgMagnifier src={item.image} />}
+
 					<Details {...item} />
-				</Styled.Wrapper>
+
+					<Separator margin="0" thickness="5px" />
+
+					<Acquisition
+						stock={item.stock}
+						shippingPromSecLeft={item.shippingPromSecLeft}
+					/>
+				</Styled.ItemWrapper>
 			</Styled.Content>
 		</>
 	);

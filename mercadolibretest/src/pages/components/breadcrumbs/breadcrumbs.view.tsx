@@ -1,9 +1,7 @@
 import React from "react";
 import * as Styled from "./breadcrumbs.styled";
 import { useTheme } from "@emotion/react";
-import Button from "../../../shared/components/button/button.view";
-import Typography from "../../../shared/components/typography/typography.view";
-import Separator from "../../../shared/components/separator/separator.view";
+import { Button, Separator, Typography } from "../../../shared/components";
 
 export interface IBreadcrumbItem {
 	label: string;
@@ -23,7 +21,7 @@ const Breadcrumbs: React.FC<IBreadcrumbsProps> = ({
 	const theme = useTheme();
 	return (
 		<Styled.Wrapper>
-			<Button variant="ghost" hasHover={false} onlyText>
+			<Button variant="link" hasHover={false} onlyText>
 				<Typography color={theme.secondary[500]}>Voltar para lista</Typography>
 			</Button>
 			<Separator />

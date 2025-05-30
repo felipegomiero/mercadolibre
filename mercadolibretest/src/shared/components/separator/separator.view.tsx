@@ -5,11 +5,13 @@ import type { ISeparator } from "./types";
 const Separator: React.FC<ISeparator> = ({
 	vertical = true,
 	margin = "0 12px",
+	thickness = "1px",
 	color,
 }) => {
 	const theme = useTheme();
 	return (
 		<Styled.Separator
+			thickness={thickness}
 			vertical={vertical}
 			margin={margin}
 			color={color || theme.neutral[600]}

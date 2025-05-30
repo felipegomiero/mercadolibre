@@ -2,15 +2,14 @@ import type React from "react";
 import * as Styled from "./img-magnifier.styled";
 import { useState } from "react";
 
-interface IImgMagnifier extends React.ImgHTMLAttributes<HTMLImageElement> {
+interface IImgMagnifier {
 	src: string;
 	imgSize?: {
-		width: number;
-		height: number;
+		width: string;
+		height: string;
 	};
 	magnifierSize?: number;
 	zoom?: number;
-	alt: string;
 }
 
 const ImgMagnifier: React.FC<IImgMagnifier> = ({
@@ -18,7 +17,6 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 	imgSize,
 	magnifierSize = 250,
 	src,
-	alt,
 }) => {
 	const [[x, y], setXY] = useState([0, 0]);
 	const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
@@ -26,7 +24,7 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 
 	const onMouseLeave = () => setShowMagnifier(false);
 
-	const onMouseMove = (event: React.MouseEvent<HTMLImageElement>) => {
+	const onMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
 		const elem = event.currentTarget;
 		const { top, left } = elem.getBoundingClientRect();
 		const x = event.pageX - left - window.pageXOffset;
@@ -34,7 +32,7 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 		setXY([x, y]);
 	};
 
-	const onMouseEnter = (event: React.MouseEvent<HTMLImageElement>) => {
+	const onMouseEnter = (event: React.MouseEvent<HTMLDivElement>) => {
 		const elem = event.currentTarget;
 		const { width, height } = elem.getBoundingClientRect();
 		setSize([width, height]);
@@ -43,14 +41,13 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 
 	return (
 		<Styled.Wrapper>
-			<Styled.Img
+			<Styled.ImgContainer
 				width={imgSize?.width}
 				height={imgSize?.height}
 				src={src}
 				onMouseEnter={onMouseEnter}
 				onMouseMove={onMouseMove}
 				onMouseLeave={onMouseLeave}
-				alt={alt}
 			/>
 			<Styled.MagnifierGlass
 				showMagnifier={showMagnifier}

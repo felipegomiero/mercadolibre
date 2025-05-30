@@ -1,5 +1,11 @@
 import styled from "@emotion/styled";
 
+interface ImgContainer {
+	width?: string;
+	height?: string;
+	src: string;
+}
+
 interface BackgroundImg {
 	src: string;
 	zoom: number;
@@ -48,8 +54,14 @@ export const MagnifierGlass = styled.div(
 `
 );
 
-export const Img = styled.img`
-	width: ${({ width }) => width}px;
-	height: ${({ height }) => height}px;
+export const ImgContainer = styled.div<ImgContainer>`
+	${({ width }) => `width: ${width};`}
+	${({ height }) => `height: ${height};`}
+	min-height: 450px;
+	min-width: 40vw;
 	display block;
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	${({ src }) => `background-image: url('${src}');`}
 `;

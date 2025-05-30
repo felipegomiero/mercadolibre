@@ -5,5 +5,6 @@ declare module "@emotion/react" {
 		primary: typeof mercadoLibrePalette.primary;
 		secondary: typeof mercadoLibrePalette.secondary;
 		neutral: typeof mercadoLibrePalette.neutral;
+		success: typeof mercadoLibrePalette.success;
 	}
 }

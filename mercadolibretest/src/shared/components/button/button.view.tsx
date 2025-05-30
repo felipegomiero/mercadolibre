@@ -5,10 +5,9 @@ import * as Styled from "./button.styled";
 const Button: React.FC<IButtonProps> = ({
 	children,
 	variant = "secondary",
-	disabled = false,
 	type = "button",
-	hasHover = true,
-	onlyText = false,
+	width = "auto",
+	disabled = false,
 	onClick,
 }) => {
 	const theme = useTheme();
@@ -18,9 +17,9 @@ const Button: React.FC<IButtonProps> = ({
 			type={type}
 			disabled={disabled}
 			theme={theme}
-			hasHover={hasHover}
-			onlyText={onlyText}
-			onClick={onClick}>
+			width={width}
+			onClick={onClick}
+			{...(variant === "link" ? { as: "a" } : {})}>
 			{children}
 		</Styled.Button>
 	);

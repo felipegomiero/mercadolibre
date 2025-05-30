@@ -6,6 +6,7 @@ import pxToRem from "../../../shared/utils/px-to-rem";
 
 export const Wrapper = styled.div`
 	display: flex;
+	font-size: ${pxToRem(14)};
 `;
 
 export const Ol = styled.ol`
@@ -13,7 +14,6 @@ export const Ol = styled.ol`
 	display: flex;
 	padding: 0;
 	margin: 0;
-	font-size: ${pxToRem(14)};
 `;
 
 export const Li = styled.li`
@@ -32,7 +32,6 @@ export const BreadcrumbSeparator = styled.span`
 `;
 
 export const Text = styled(Typography)`
-	font-size: ${pxToRem(14)};
 	color: ${({ theme, isLast }: { theme: Theme; isLast: boolean }) =>
 		!isLast ? theme.secondary[500] : theme.neutral[900]};
 `;
