@@ -55,10 +55,10 @@ export const MagnifierGlass = styled.div(
 );
 
 export const ImgContainer = styled.div<ImgContainer>`
-	${({ width }) => `width: ${width};`}
-	${({ height }) => `height: ${height};`}
+	${({ width }) => `width: ${width || "auto"};`}
+	${({ height }) => `height: ${height || "auto"};`}
 	min-height: 450px;
-	min-width: 40vw;
+	min-width: 35vw;
 	display block;
   background-repeat: no-repeat;
 	background-position: center;

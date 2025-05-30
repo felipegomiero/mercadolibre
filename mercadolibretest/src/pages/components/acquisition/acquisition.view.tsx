@@ -2,22 +2,22 @@ import React from "react";
 import { useTheme } from "@emotion/react";
 import { Button, Select, Typography } from "../../../shared/components";
 import * as Styled from "./acquisition.styled";
-import { roundDownTo50 } from "./utils/round-down-to-50";
 import useCountDownTime from "./hooks/use-count-down-time";
 import type { IAcquisition } from "../../types";
+import { formatCompactValue } from "../../../shared/utils";
 
 const Acquisition: React.FC<IAcquisition> = ({
 	stock,
 	shippingPromSecLeft,
 }) => {
-	const [qtd, setQtd] = React.useState<number>(1);
+	const [qty, setQty] = React.useState<number>(1);
 	const theme = useTheme();
 
 	const stockLbl = `${
-		stock > 50 ? `+${roundDownTo50(stock)}` : stock
+		stock < 99 ? `+${formatCompactValue(stock)}` : stock
 	} disponíveis`;
 
-	const qtdSelect = {
+	const qtySelect = {
 		label: "Quantidade",
 		options: Array.from({ length: 6 }).map((_, index) => {
 			return {
@@ -25,8 +25,8 @@ const Acquisition: React.FC<IAcquisition> = ({
 				label: `${index + 1} un.`,
 			};
 		}),
-		value: qtd,
-		onChange: setQtd,
+		value: qty,
+		onChange: setQty,
 	};
 
 	const timeLeft = useCountDownTime(shippingPromSecLeft);
@@ -78,7 +78,7 @@ const Acquisition: React.FC<IAcquisition> = ({
 			</Styled.ShippingWrapper>
 
 			<Styled.FlexSpaceBetween>
-				<Select {...qtdSelect} />
+				<Select {...qtySelect} />
 				<Typography margin="auto 0" color={theme.neutral[600]}>
 					{stockLbl}
 				</Typography>

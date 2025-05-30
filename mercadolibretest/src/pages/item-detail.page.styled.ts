@@ -5,7 +5,7 @@ export const ItemWrapper = styled.div`
 	display: flex;
 	margin: 24px 0;
 	> :not(:last-of-type) {
-		margin-right: 24px;
+		margin-right: 32px;
 	}
 `;
 

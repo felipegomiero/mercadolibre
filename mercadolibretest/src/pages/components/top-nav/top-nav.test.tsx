@@ -1,5 +1,5 @@
 import { screen } from "@testing-library/react";
-import TopNav from "./topnav.view";
+import TopNav from "./top-nav.view";
 import { describe, it, expect } from "vitest";
 import renderWithProviders from "../../../tests/render-with-providers";
 
