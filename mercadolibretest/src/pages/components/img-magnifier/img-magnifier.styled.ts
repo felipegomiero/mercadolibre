@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaMobile } from "../../../shared/theme/media-sizes";
 
 interface ImgContainer {
 	width?: string;
@@ -64,4 +65,9 @@ export const ImgContainer = styled.div<ImgContainer>`
 	background-position: center;
 	background-size: cover;
 	${({ src }) => `background-image: url('${src}');`}
+
+	@media (${mediaMobile}) {
+		min-width: 100vw;
+		min-height: 90vh;
+	}
 `;
