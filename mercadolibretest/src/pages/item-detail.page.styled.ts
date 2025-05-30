@@ -15,3 +15,7 @@ export const Content = styled.div`
 	max-width: 90vw;
 	margin: auto;
 `;
+
+export const Block = styled.div`
+	display: block;
+`;

@@ -11,6 +11,5 @@ export interface IButtonProps {
 	variant?: TButtonVariant;
 	width?: string;
 	disabled?: boolean;
-	hasHover?: boolean;
-	onlyText?: boolean;
+	className?: string;
 }

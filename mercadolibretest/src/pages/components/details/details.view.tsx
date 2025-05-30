@@ -4,9 +4,18 @@ import type { IDetail } from "../../types";
 import StarRating from "../star-rating/star-rating";
 import * as Styled from "./details.styled";
 import { formatCompactValue } from "../../../shared/utils";
+import { useState } from "react";
+import PaymentMethodsModal from "../payment-methods-modal/payment-methods-modal.view";
 
-const Details: React.FC<IDetail> = ({ title, price, evaluation, qtySold }) => {
+const Details: React.FC<IDetail> = ({
+	title,
+	price,
+	evaluation,
+	qtySold,
+	paymentMethods,
+}) => {
 	const theme = useTheme();
+	const [paymentPopup, setPaymentPopUp] = useState<boolean>(false);
 
 	const qtySoldLbl = `${
 		qtySold > 999 ? `+${formatCompactValue(qtySold)}` : qtySold
@@ -20,7 +29,11 @@ const Details: React.FC<IDetail> = ({ title, price, evaluation, qtySold }) => {
 			<Typography pxFontSize={32} margin="12px 0">
 				{price}
 			</Typography>
-			<Button variant="link">Ver outras formas de pagamento</Button>
+			<Button variant="link" onClick={() => setPaymentPopUp(true)}>
+				<Typography pxFontSize={14} color={theme.secondary[500]}>
+					Ver outras formas de pagamento
+				</Typography>
+			</Button>
 
 			<Styled.EvaluationWrapper>
 				<StarRating value={evaluation.stars} qty={evaluation.qty} />
@@ -29,6 +42,12 @@ const Details: React.FC<IDetail> = ({ title, price, evaluation, qtySold }) => {
 					{qtySoldLbl}
 				</Typography>
 			</Styled.EvaluationWrapper>
+
+			<PaymentMethodsModal
+				isOpen={paymentPopup}
+				setOpen={setPaymentPopUp}
+				{...paymentMethods}
+			/>
 		</Styled.Wrapper>
 	);
 };

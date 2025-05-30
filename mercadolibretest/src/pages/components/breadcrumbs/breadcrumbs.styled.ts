@@ -19,6 +19,7 @@ export const Ol = styled.ol`
 export const Li = styled.li`
 	display: flex;
 	align-items: center;
+	margin-top: 0;
 `;
 
 export const LinkA = styled(Link)`

@@ -9,10 +9,12 @@ const Button: React.FC<IButtonProps> = ({
 	width = "auto",
 	disabled = false,
 	onClick,
+	className,
 }) => {
 	const theme = useTheme();
 	return (
 		<Styled.Button
+			className={className}
 			variant={variant}
 			type={type}
 			disabled={disabled}

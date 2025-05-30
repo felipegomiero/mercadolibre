@@ -11,6 +11,7 @@ interface SelectProps<T extends string | number> {
 	onChange: (value: T) => void;
 	label?: string;
 	disabled?: boolean;
+	className?: string;
 }
 
 const Select = <T extends string | number>({
@@ -19,9 +20,10 @@ const Select = <T extends string | number>({
 	onChange,
 	label,
 	disabled = false,
+	className,
 }: SelectProps<T>): ReturnType<React.FC<SelectProps<T>>> => {
 	return (
-		<Styled.Wrapper>
+		<Styled.Wrapper className={className}>
 			{label && <label>{label}:</label>}
 			<Styled.Select
 				value={value}

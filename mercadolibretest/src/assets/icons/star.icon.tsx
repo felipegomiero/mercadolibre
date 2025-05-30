@@ -1,5 +1,3 @@
-import React from "react";
-
 interface StarIconProps {
 	filled?: boolean;
 	half?: boolean;
@@ -8,6 +6,7 @@ interface StarIconProps {
 	strokeColor?: string;
 	label?: string;
 	decorative?: boolean;
+	className?: string;
 }
 
 const StarIcon: React.FC<StarIconProps> = ({
@@ -18,6 +17,7 @@ const StarIcon: React.FC<StarIconProps> = ({
 	strokeColor,
 	label = "Icone de estrela",
 	decorative = true,
+	className,
 }) => {
 	const titleId = `star-icon-title-${Math.random()
 		.toString(36)
@@ -25,6 +25,7 @@ const StarIcon: React.FC<StarIconProps> = ({
 
 	return (
 		<svg
+			className={className}
 			width={size}
 			height={size}
 			viewBox={`0 0 24 24`}

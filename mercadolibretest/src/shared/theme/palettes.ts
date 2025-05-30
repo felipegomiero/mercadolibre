@@ -10,8 +10,9 @@ export const mercadoLibrePalette = {
 		600: "#24285F",
 	},
 	neutral: {
-		500: "#E5E5E5",
-		600: "#8C8C8C",
+		400: "#E5E5E5",
+		500: "#D3D3D3",
+		600: "#5C5C5C",
 		700: "#333333",
 		900: "#1A1A1A",
 	},

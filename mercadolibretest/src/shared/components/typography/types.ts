@@ -4,4 +4,5 @@ export interface ITypographyProps {
 	color?: string;
 	margin?: string;
 	pxFontSize?: number | null;
+	className?: string;
 }

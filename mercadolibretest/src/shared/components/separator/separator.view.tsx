@@ -7,10 +7,12 @@ const Separator: React.FC<ISeparator> = ({
 	margin = "0 12px",
 	thickness = "1px",
 	color,
+	className,
 }) => {
 	const theme = useTheme();
 	return (
 		<Styled.Separator
+			className={className}
 			thickness={thickness}
 			vertical={vertical}
 			margin={margin}

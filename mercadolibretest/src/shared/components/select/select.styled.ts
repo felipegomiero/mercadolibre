@@ -17,7 +17,7 @@ export const Select = styled.select`
 	border-radius: 8px;
 	font-size: ${pxToRem(14)};
 	:hover {
-		background: ${({ theme }) => theme.neutral[500]};
+		background: ${({ theme }) => theme.neutral[400]};
 	}
 	:picker(select) {
 		border: none;

@@ -1,35 +1,18 @@
-import Breadcrumbs, {
-	type IBreadcrumbItem,
-} from "./components/breadcrumbs/breadcrumbs.view";
+import Breadcrumbs from "./components/breadcrumbs/breadcrumbs.view";
 import ImgMagnifier from "./components/img-magnifier/img-magnifier.view";
 import TopNav from "./components/top-nav/top-nav.view";
 import Details from "./components/details/details.view";
 import * as Styled from "./item-detail.page.styled";
-import type { IDetail } from "./types";
 import Acquisition from "./components/acquisition/acquisition.view";
-import { Separator } from "../shared/components";
+import { Separator, Typography } from "../shared/components";
+import SellerInfo from "./components/seller-info/seller-info";
+import mocks from "./services/mocks";
+import { useTheme } from "@emotion/react";
+import parse from "html-react-parser";
 
 const ItemDetailPage = () => {
-	const breadCrumbsItems: IBreadcrumbItem[] = [
-		{ label: "Celulares e telefones" },
-		{ label: "Celulares e smartphones" },
-		{ label: "Samsung" },
-	];
-
-	const item: IDetail = {
-		title: "Samsung Galaxy S24 Galaxy Ai 256GB Preto 8GB RAM",
-		price: "R$ 3.438",
-		stock: 56,
-		shippingPromSecLeft: 104500,
-		evaluation: {
-			stars: 2.5,
-			qty: 34567,
-		},
-		qtySold: 100450,
-		image:
-			"https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-s24-62-galaxy-ai-256gb-preto-5g-8gb-ram-cam-tripla-50mp-selfie-12mp-bateria-4000mah-dual-chip/magazineluiza/238095300/e7d6a769c701da9491194643ae02c865.jpg",
-	};
-
+	const { mockBreadCrumbsItems: breadCrumbsItems, mockItem: item } = mocks;
+	const theme = useTheme();
 	return (
 		<>
 			<TopNav />
@@ -37,7 +20,10 @@ const ItemDetailPage = () => {
 				<Breadcrumbs items={breadCrumbsItems} />
 
 				<Styled.ItemWrapper>
-					{item.image && <ImgMagnifier src={item.image} />}
+					<Styled.Block>
+						{item.image && <ImgMagnifier src={item.image} />}
+						<SellerInfo {...item.seller} />
+					</Styled.Block>
 
 					<Details {...item} />
 
@@ -48,6 +34,13 @@ const ItemDetailPage = () => {
 						shippingPromSecLeft={item.shippingPromSecLeft}
 					/>
 				</Styled.ItemWrapper>
+
+				<Typography as="h2" pxFontSize={null} margin="24px 0">
+					Descrição
+				</Typography>
+				<Typography as="p" color={theme.neutral[700]}>
+					{parse(item.desc)}
+				</Typography>
 			</Styled.Content>
 		</>
 	);

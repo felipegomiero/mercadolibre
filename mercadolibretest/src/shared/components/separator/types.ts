@@ -3,4 +3,5 @@ export interface ISeparator {
 	margin?: string;
 	color?: string;
 	thickness?: string;
+	className?: string;
 }

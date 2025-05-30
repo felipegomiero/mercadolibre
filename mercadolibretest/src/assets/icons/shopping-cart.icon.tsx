@@ -1,10 +1,9 @@
-import React from "react";
-
 interface SvgShoppingCartIconProps {
 	size?: number;
 	color?: string;
 	label?: string;
 	decorative?: boolean;
+	className?: string;
 }
 
 const SvgShoppingCartIcon: React.FC<SvgShoppingCartIconProps> = ({
@@ -12,6 +11,7 @@ const SvgShoppingCartIcon: React.FC<SvgShoppingCartIconProps> = ({
 	color = "currentColor",
 	label = "Ícone de carrinho de compras",
 	decorative = false,
+	className,
 }) => {
 	const titleId = `shopping-cart-title-${Math.random()
 		.toString(36)
@@ -19,6 +19,7 @@ const SvgShoppingCartIcon: React.FC<SvgShoppingCartIconProps> = ({
 
 	return (
 		<svg
+			className={className}
 			data-testid="shopping-cart-icon"
 			xmlns="http://www.w3.org/2000/svg"
 			width={size}
