@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1748396114171" clover="3.2.0">
-  <project timestamp="1748396114172" name="All files">
-    <metrics statements="264" coveredstatements="157" conditionals="33" coveredconditionals="23" methods="18" coveredmethods="9" elements="315" coveredelements="189" complexity="0" loc="264" ncloc="264" packages="12" files="21" classes="21"/>
+<coverage generated="1748811614103" clover="3.2.0">
+  <project timestamp="1748811614103" name="All files">
+    <metrics statements="1433" coveredstatements="1180" conditionals="144" coveredconditionals="126" methods="52" coveredmethods="42" elements="1629" coveredelements="1348" complexity="0" loc="1433" ncloc="1433" packages="28" files="62" classes="62"/>
     <package name="src">
       <metrics statements="16" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="main.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\main.tsx">
@@ -25,13 +25,665 @@
       </file>
     </package>
     <package name="src.assets.icons">
-      <metrics statements="17" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="159" coveredstatements="159" conditionals="12" coveredconditionals="9" methods="4" coveredmethods="4"/>
+      <file name="cross.icon.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\assets\icons\cross.icon.tsx">
+        <metrics statements="37" coveredstatements="37" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="21" count="10" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="24" count="10" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="26" count="10" type="stmt"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="30" count="10" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="32" count="10" type="stmt"/>
+        <line num="33" count="10" type="stmt"/>
+        <line num="34" count="10" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="38" count="10" type="stmt"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="40" count="10" type="stmt"/>
+        <line num="41" count="10" type="stmt"/>
+        <line num="43" count="10" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+      </file>
       <file name="index.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\assets\icons\index.ts">
-        <metrics statements="1" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
       </file>
       <file name="shopping-cart.icon.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\assets\icons\shopping-cart.icon.tsx">
-        <metrics statements="16" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="34" coveredstatements="34" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+      </file>
+      <file name="star.icon.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\assets\icons\star.icon.tsx">
+        <metrics statements="52" coveredstatements="52" conditionals="7" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="45" type="stmt"/>
+        <line num="15" count="45" type="stmt"/>
+        <line num="16" count="45" type="stmt"/>
+        <line num="17" count="45" type="stmt"/>
+        <line num="18" count="45" type="stmt"/>
+        <line num="19" count="45" type="stmt"/>
+        <line num="20" count="45" type="stmt"/>
+        <line num="21" count="45" type="stmt"/>
+        <line num="22" count="45" type="stmt"/>
+        <line num="23" count="45" type="stmt"/>
+        <line num="24" count="45" type="stmt"/>
+        <line num="25" count="45" type="stmt"/>
+        <line num="26" count="45" type="stmt"/>
+        <line num="28" count="45" type="stmt"/>
+        <line num="29" count="45" type="stmt"/>
+        <line num="30" count="45" type="stmt"/>
+        <line num="31" count="45" type="stmt"/>
+        <line num="32" count="45" type="stmt"/>
+        <line num="33" count="45" type="stmt"/>
+        <line num="34" count="45" type="stmt"/>
+        <line num="35" count="45" type="stmt"/>
+        <line num="36" count="45" type="stmt"/>
+        <line num="37" count="45" type="cond" truecount="0" falsecount="1"/>
+        <line num="38" count="45" type="stmt"/>
+        <line num="39" count="45" type="stmt"/>
+        <line num="40" count="45" type="stmt"/>
+        <line num="43" count="45" type="stmt"/>
+        <line num="44" count="45" type="stmt"/>
+        <line num="46" count="45" type="stmt"/>
+        <line num="47" count="45" type="stmt"/>
+        <line num="48" count="45" type="stmt"/>
+        <line num="49" count="45" type="stmt"/>
+        <line num="52" count="45" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="38" type="stmt"/>
+        <line num="54" count="38" type="cond" truecount="1" falsecount="0"/>
+        <line num="55" count="7" type="stmt"/>
+        <line num="56" count="7" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="58" count="7" type="stmt"/>
+        <line num="59" count="7" type="stmt"/>
+        <line num="60" count="7" type="stmt"/>
+        <line num="62" count="38" type="stmt"/>
+        <line num="63" count="38" type="stmt"/>
+        <line num="65" count="38" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="38" type="stmt"/>
+        <line num="67" count="38" type="stmt"/>
+        <line num="68" count="38" type="stmt"/>
+        <line num="69" count="38" type="stmt"/>
+        <line num="71" count="45" type="stmt"/>
+        <line num="73" count="45" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+      </file>
+      <file name="verified.icon.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\assets\icons\verified.icon.tsx">
+        <metrics statements="32" coveredstatements="32" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="20" type="stmt"/>
+        <line num="11" count="20" type="stmt"/>
+        <line num="12" count="20" type="stmt"/>
+        <line num="13" count="20" type="stmt"/>
+        <line num="14" count="20" type="stmt"/>
+        <line num="15" count="20" type="stmt"/>
+        <line num="16" count="20" type="stmt"/>
+        <line num="17" count="20" type="stmt"/>
+        <line num="18" count="20" type="stmt"/>
+        <line num="20" count="20" type="stmt"/>
+        <line num="21" count="20" type="stmt"/>
+        <line num="22" count="20" type="stmt"/>
+        <line num="23" count="20" type="stmt"/>
+        <line num="24" count="20" type="stmt"/>
+        <line num="25" count="20" type="stmt"/>
+        <line num="26" count="20" type="stmt"/>
+        <line num="27" count="20" type="stmt"/>
+        <line num="28" count="20" type="stmt"/>
+        <line num="29" count="20" type="stmt"/>
+        <line num="30" count="20" type="stmt"/>
+        <line num="31" count="20" type="cond" truecount="0" falsecount="1"/>
+        <line num="32" count="20" type="stmt"/>
+        <line num="33" count="20" type="stmt"/>
+        <line num="34" count="20" type="stmt"/>
+        <line num="35" count="20" type="stmt"/>
+        <line num="36" count="20" type="stmt"/>
+        <line num="37" count="20" type="stmt"/>
+        <line num="38" count="20" type="stmt"/>
+        <line num="39" count="20" type="stmt"/>
+        <line num="41" count="20" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages">
+      <metrics statements="43" coveredstatements="43" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="item-detail.page.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\item-detail.page.styled.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="item-detail.page.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\item-detail.page.tsx">
+        <metrics statements="37" coveredstatements="37" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+      </file>
+      <file name="types.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      </file>
+    </package>
+    <package name="src.pages.components.acquisition">
+      <metrics statements="87" coveredstatements="87" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="acquisition.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\acquisition\acquisition.styled.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+      <file name="acquisition.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\acquisition\acquisition.view.tsx">
+        <metrics statements="81" coveredstatements="81" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+        <line num="22" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="72" type="stmt"/>
+        <line num="24" count="72" type="stmt"/>
+        <line num="25" count="72" type="stmt"/>
+        <line num="26" count="72" type="stmt"/>
+        <line num="27" count="12" type="stmt"/>
+        <line num="28" count="12" type="stmt"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="30" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="36" count="12" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="38" count="12" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="47" count="12" type="stmt"/>
+        <line num="48" count="12" type="stmt"/>
+        <line num="49" count="12" type="stmt"/>
+        <line num="50" count="12" type="stmt"/>
+        <line num="51" count="12" type="stmt"/>
+        <line num="52" count="12" type="stmt"/>
+        <line num="54" count="12" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
+        <line num="56" count="12" type="stmt"/>
+        <line num="57" count="12" type="stmt"/>
+        <line num="58" count="12" type="stmt"/>
+        <line num="59" count="12" type="stmt"/>
+        <line num="60" count="12" type="stmt"/>
+        <line num="61" count="12" type="stmt"/>
+        <line num="63" count="12" type="stmt"/>
+        <line num="64" count="12" type="stmt"/>
+        <line num="65" count="12" type="stmt"/>
+        <line num="66" count="12" type="stmt"/>
+        <line num="67" count="12" type="stmt"/>
+        <line num="68" count="12" type="stmt"/>
+        <line num="70" count="12" type="stmt"/>
+        <line num="71" count="12" type="stmt"/>
+        <line num="72" count="12" type="stmt"/>
+        <line num="73" count="12" type="stmt"/>
+        <line num="74" count="12" type="stmt"/>
+        <line num="76" count="12" type="stmt"/>
+        <line num="77" count="12" type="stmt"/>
+        <line num="78" count="12" type="stmt"/>
+        <line num="80" count="12" type="stmt"/>
+        <line num="81" count="12" type="stmt"/>
+        <line num="82" count="12" type="stmt"/>
+        <line num="83" count="12" type="stmt"/>
+        <line num="84" count="12" type="stmt"/>
+        <line num="85" count="12" type="stmt"/>
+        <line num="87" count="12" type="stmt"/>
+        <line num="88" count="12" type="stmt"/>
+        <line num="89" count="12" type="stmt"/>
+        <line num="91" count="12" type="stmt"/>
+        <line num="92" count="12" type="stmt"/>
+        <line num="93" count="12" type="stmt"/>
+        <line num="94" count="12" type="stmt"/>
+        <line num="96" count="12" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.acquisition.hooks">
+      <metrics statements="18" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="use-count-down-time.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\acquisition\hooks\use-count-down-time.ts">
+        <metrics statements="18" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="6" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.breadcrumbs">
+      <metrics statements="63" coveredstatements="63" conditionals="13" coveredconditionals="12" methods="1" coveredmethods="1"/>
+      <file name="breadcrumbs.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\breadcrumbs\breadcrumbs.styled.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="32" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="1" type="cond" truecount="0" falsecount="1"/>
+      </file>
+      <file name="breadcrumbs.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\breadcrumbs\breadcrumbs.view.tsx">
+        <metrics statements="48" coveredstatements="48" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+        <line num="31" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="20" type="stmt"/>
+        <line num="33" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="14" type="stmt"/>
+        <line num="35" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="9" type="stmt"/>
+        <line num="38" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+        <line num="46" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="47" count="9" type="stmt"/>
+        <line num="48" count="9" type="stmt"/>
+        <line num="49" count="9" type="stmt"/>
+        <line num="51" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="53" count="6" type="stmt"/>
+        <line num="54" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="59" count="6" type="stmt"/>
+        <line num="61" count="7" type="stmt"/>
+        <line num="62" count="7" type="stmt"/>
+        <line num="63" count="7" type="stmt"/>
+        <line num="64" count="7" type="stmt"/>
+        <line num="66" count="7" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.details">
+      <metrics statements="58" coveredstatements="58" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="details.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\details\details.styled.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="details.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\details\details.view.tsx">
+        <metrics statements="53" coveredstatements="53" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="cond" truecount="0" falsecount="1"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="41" count="6" type="stmt"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="46" count="6" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="48" count="6" type="stmt"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="51" count="6" type="stmt"/>
+        <line num="53" count="6" type="stmt"/>
+        <line num="55" count="6" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="57" count="6" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
+        <line num="59" count="6" type="stmt"/>
+        <line num="60" count="6" type="stmt"/>
+        <line num="62" count="6" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.img-gallery">
+      <metrics statements="44" coveredstatements="44" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="img-gallery.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\img-gallery\img-gallery.styled.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="3" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="23" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="28" count="8" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+      <file name="img-gallery.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\img-gallery\img-gallery.view.tsx">
+        <metrics statements="29" coveredstatements="29" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="26" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.img-magnifier">
+      <metrics statements="81" coveredstatements="81" conditionals="16" coveredconditionals="14" methods="6" coveredmethods="6"/>
+      <file name="img-magnifier.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\img-magnifier\img-magnifier.styled.ts">
+        <metrics statements="31" coveredstatements="31" conditionals="10" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="30" count="12" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="36" count="12" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="38" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="49" count="12" type="stmt"/>
+        <line num="51" count="12" type="cond" truecount="0" falsecount="1"/>
+        <line num="52" count="12" type="cond" truecount="0" falsecount="1"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="54" count="12" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="68" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="70" count="1" type="stmt"/>
+      </file>
+      <file name="img-magnifier.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\img-magnifier\img-magnifier.view.tsx">
+        <metrics statements="50" coveredstatements="50" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="25" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="46" count="12" type="stmt"/>
+        <line num="47" count="12" type="stmt"/>
+        <line num="48" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="50" count="12" type="stmt"/>
+        <line num="51" count="12" type="stmt"/>
+        <line num="52" count="12" type="stmt"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="54" count="12" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
+        <line num="56" count="12" type="stmt"/>
+        <line num="57" count="12" type="stmt"/>
+        <line num="58" count="12" type="stmt"/>
+        <line num="59" count="12" type="stmt"/>
+        <line num="60" count="12" type="stmt"/>
+        <line num="61" count="12" type="stmt"/>
+        <line num="62" count="12" type="stmt"/>
+        <line num="63" count="12" type="stmt"/>
+        <line num="64" count="12" type="stmt"/>
+        <line num="65" count="12" type="stmt"/>
+        <line num="66" count="12" type="stmt"/>
+        <line num="68" count="12" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.img-magnifier.utils">
+      <metrics statements="50" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="get-cursor-position.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\img-magnifier\utils\get-cursor-position.ts">
+        <metrics statements="19" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+      </file>
+      <file name="move-magnifier.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\img-magnifier\utils\move-magnifier.ts">
+        <metrics statements="31" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -43,32 +695,6 @@
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.pages">
-      <metrics statements="23" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="item-detail.page.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\item-detail.page.styled.ts">
-        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-      </file>
-      <file name="item-detail.page.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\item-detail.page.tsx">
-        <metrics statements="20" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
@@ -76,10 +702,349 @@
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.key-features">
+      <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="key-features.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\key-features\key-features.styled.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="key-features.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\key-features\key-features.view.tsx">
+        <metrics statements="22" coveredstatements="22" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.payment-methods-modal">
+      <metrics statements="103" coveredstatements="98" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="1"/>
+      <file name="payment-methods-modal.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\payment-methods-modal\payment-methods-modal.styled.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="payment-methods-modal.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\payment-methods-modal\payment-methods-modal.view.tsx">
+        <metrics statements="96" coveredstatements="91" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="27" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="34" count="7" type="stmt"/>
+        <line num="36" count="7" type="stmt"/>
+        <line num="37" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="39" count="7" type="stmt"/>
+        <line num="40" count="7" type="stmt"/>
+        <line num="41" count="7" type="stmt"/>
+        <line num="42" count="7" type="stmt"/>
+        <line num="43" count="7" type="stmt"/>
+        <line num="44" count="7" type="stmt"/>
+        <line num="45" count="7" type="stmt"/>
+        <line num="46" count="7" type="stmt"/>
+        <line num="47" count="7" type="stmt"/>
+        <line num="49" count="7" type="stmt"/>
+        <line num="50" count="7" type="stmt"/>
+        <line num="51" count="7" type="stmt"/>
+        <line num="54" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="76" count="1" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="81" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="87" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="106" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="116" count="1" type="stmt"/>
+        <line num="118" count="8" type="stmt"/>
+        <line num="119" count="8" type="stmt"/>
+        <line num="121" count="8" type="stmt"/>
+        <line num="123" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.seller-info">
+      <metrics statements="81" coveredstatements="81" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="seller-info.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\seller-info\seller-info.styled.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+      </file>
+      <file name="seller-info.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\seller-info\seller-info.tsx">
+        <metrics statements="68" coveredstatements="68" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="21" count="10" type="stmt"/>
+        <line num="22" count="10" type="stmt"/>
+        <line num="24" count="10" type="stmt"/>
+        <line num="26" count="10" type="stmt"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="30" count="10" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="32" count="10" type="stmt"/>
+        <line num="34" count="10" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="38" count="10" type="stmt"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="41" count="10" type="stmt"/>
+        <line num="42" count="10" type="stmt"/>
+        <line num="43" count="10" type="stmt"/>
+        <line num="45" count="10" type="stmt"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="48" count="10" type="stmt"/>
+        <line num="49" count="10" type="stmt"/>
+        <line num="50" count="10" type="stmt"/>
+        <line num="51" count="10" type="stmt"/>
+        <line num="52" count="10" type="stmt"/>
+        <line num="53" count="10" type="stmt"/>
+        <line num="55" count="10" type="stmt"/>
+        <line num="56" count="10" type="stmt"/>
+        <line num="57" count="10" type="stmt"/>
+        <line num="58" count="10" type="stmt"/>
+        <line num="59" count="10" type="stmt"/>
+        <line num="60" count="10" type="stmt"/>
+        <line num="62" count="10" type="stmt"/>
+        <line num="63" count="10" type="stmt"/>
+        <line num="65" count="10" type="stmt"/>
+        <line num="66" count="10" type="stmt"/>
+        <line num="67" count="10" type="stmt"/>
+        <line num="68" count="10" type="stmt"/>
+        <line num="69" count="10" type="stmt"/>
+        <line num="71" count="10" type="stmt"/>
+        <line num="72" count="10" type="stmt"/>
+        <line num="74" count="10" type="stmt"/>
+        <line num="75" count="10" type="stmt"/>
+        <line num="76" count="10" type="stmt"/>
+        <line num="77" count="10" type="stmt"/>
+        <line num="78" count="10" type="stmt"/>
+        <line num="80" count="10" type="stmt"/>
+        <line num="81" count="10" type="stmt"/>
+        <line num="82" count="10" type="stmt"/>
+        <line num="83" count="10" type="stmt"/>
+        <line num="84" count="10" type="stmt"/>
+        <line num="86" count="10" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.star-rating">
+      <metrics statements="50" coveredstatements="50" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+      <file name="star-rating.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\star-rating\star-rating.styled.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="star-rating.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\star-rating\star-rating.tsx">
+        <metrics statements="45" coveredstatements="45" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="17" count="9" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="24" count="9" type="stmt"/>
+        <line num="25" count="9" type="stmt"/>
+        <line num="26" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="45" type="stmt"/>
+        <line num="28" count="45" type="stmt"/>
+        <line num="29" count="45" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="45" type="stmt"/>
+        <line num="31" count="45" type="stmt"/>
+        <line num="32" count="45" type="stmt"/>
+        <line num="33" count="45" type="cond" truecount="4" falsecount="0"/>
+        <line num="34" count="45" type="stmt"/>
+        <line num="35" count="45" type="stmt"/>
+        <line num="36" count="45" type="stmt"/>
+        <line num="37" count="45" type="stmt"/>
+        <line num="38" count="45" type="stmt"/>
+        <line num="39" count="45" type="stmt"/>
+        <line num="40" count="45" type="stmt"/>
+        <line num="41" count="45" type="stmt"/>
+        <line num="42" count="45" type="stmt"/>
+        <line num="44" count="9" type="stmt"/>
+        <line num="45" count="9" type="stmt"/>
+        <line num="46" count="9" type="stmt"/>
+        <line num="47" count="9" type="stmt"/>
+        <line num="48" count="9" type="stmt"/>
+        <line num="49" count="9" type="stmt"/>
+        <line num="50" count="9" type="stmt"/>
+        <line num="51" count="9" type="stmt"/>
+        <line num="52" count="9" type="stmt"/>
+        <line num="54" count="9" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.components.top-nav">
+      <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="top-nav.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\top-nav\top-nav.styled.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+      <file name="top-nav.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\components\top-nav\top-nav.view.tsx">
+        <metrics statements="20" coveredstatements="20" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.pages.routes">
@@ -102,129 +1067,15 @@
         <line num="12" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.shared.components.breadcrumbs">
-      <metrics statements="43" coveredstatements="43" conditionals="9" coveredconditionals="8" methods="1" coveredmethods="1"/>
-      <file name="breadcrumbs.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\breadcrumbs\breadcrumbs.styled.ts">
-        <metrics statements="14" coveredstatements="14" conditionals="3" coveredconditionals="2" methods="0" coveredmethods="0"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="33" count="1" type="cond" truecount="0" falsecount="1"/>
-      </file>
-      <file name="breadcrumbs.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\breadcrumbs\breadcrumbs.view.tsx">
-        <metrics statements="29" coveredstatements="29" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="5" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="24" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="14" type="stmt"/>
-        <line num="27" count="14" type="stmt"/>
-        <line num="28" count="14" type="stmt"/>
-        <line num="29" count="14" type="cond" truecount="1" falsecount="0"/>
-        <line num="30" count="9" type="cond" truecount="1" falsecount="0"/>
-        <line num="31" count="9" type="stmt"/>
-        <line num="32" count="9" type="cond" truecount="1" falsecount="0"/>
-        <line num="34" count="5" type="stmt"/>
-        <line num="35" count="5" type="stmt"/>
-        <line num="36" count="5" type="stmt"/>
-        <line num="38" count="14" type="cond" truecount="1" falsecount="0"/>
-        <line num="39" count="14" type="stmt"/>
-        <line num="41" count="5" type="stmt"/>
-        <line num="42" count="5" type="stmt"/>
-        <line num="43" count="5" type="stmt"/>
-        <line num="45" count="5" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.shared.components.button">
-      <metrics statements="53" coveredstatements="53" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
-      <file name="button.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\button\button.styled.ts">
-        <metrics statements="32" coveredstatements="32" conditionals="7" coveredconditionals="7" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
-        <line num="28" count="4" type="stmt"/>
-        <line num="29" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="38" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="40" count="3" type="stmt"/>
-        <line num="42" count="4" type="stmt"/>
-        <line num="44" count="4" type="stmt"/>
-        <line num="45" count="4" type="stmt"/>
-        <line num="46" count="4" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="55" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="56" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="61" count="3" type="stmt"/>
-        <line num="62" count="4" type="stmt"/>
-        <line num="63" count="4" type="stmt"/>
-        <line num="65" count="1" type="stmt"/>
-      </file>
-      <file name="button.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\button\button.view.tsx">
-        <metrics statements="21" coveredstatements="21" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-      </file>
-      <file name="types.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\button\types.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      </file>
-    </package>
-    <package name="src.shared.components.input">
-      <metrics statements="15" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="input.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\input\input.view.tsx">
-        <metrics statements="15" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="8" count="0" type="stmt"/>
+    <package name="src.pages.services">
+      <metrics statements="116" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="mocks.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\pages\services\mocks.ts">
+        <metrics statements="116" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
@@ -236,106 +1087,498 @@
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="106" count="0" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="108" count="0" type="stmt"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="113" count="0" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="115" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="135" count="0" type="stmt"/>
+        <line num="137" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.shared.components.topnav">
-      <metrics statements="25" coveredstatements="0" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
-      <file name="topnav.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\topnav\topnav.styled.ts">
-        <metrics statements="6" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
+    <package name="src.shared.components">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\index.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
       </file>
-      <file name="topnav.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\topnav\topnav.view.tsx">
-        <metrics statements="19" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
+    </package>
+    <package name="src.shared.components.button">
+      <metrics statements="71" coveredstatements="71" conditionals="15" coveredconditionals="14" methods="3" coveredmethods="3"/>
+      <file name="button.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\button\button.styled.ts">
+        <metrics statements="44" coveredstatements="44" conditionals="11" coveredconditionals="10" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="99" type="stmt"/>
+        <line num="14" count="99" type="stmt"/>
+        <line num="15" count="99" type="stmt"/>
+        <line num="16" count="99" type="stmt"/>
+        <line num="17" count="99" type="stmt"/>
+        <line num="18" count="99" type="stmt"/>
+        <line num="19" count="99" type="stmt"/>
+        <line num="20" count="99" type="stmt"/>
+        <line num="22" count="99" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="97" type="stmt"/>
+        <line num="25" count="97" type="stmt"/>
+        <line num="28" count="99" type="stmt"/>
+        <line num="30" count="99" type="stmt"/>
+        <line num="32" count="99" type="stmt"/>
+        <line num="34" count="99" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="97" type="stmt"/>
+        <line num="37" count="97" type="stmt"/>
+        <line num="40" count="99" type="stmt"/>
+        <line num="42" count="99" type="stmt"/>
+        <line num="46" count="99" type="cond" truecount="1" falsecount="0"/>
+        <line num="47" count="97" type="stmt"/>
+        <line num="49" count="97" type="stmt"/>
+        <line num="52" count="99" type="stmt"/>
+        <line num="54" count="99" type="stmt"/>
+        <line num="56" count="99" type="stmt"/>
+        <line num="58" count="99" type="cond" truecount="1" falsecount="0"/>
+        <line num="59" count="97" type="stmt"/>
+        <line num="61" count="97" type="stmt"/>
+        <line num="64" count="99" type="stmt"/>
+        <line num="66" count="99" type="stmt"/>
+        <line num="67" count="99" type="stmt"/>
+        <line num="68" count="99" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="72" count="99" type="cond" truecount="0" falsecount="1"/>
+        <line num="74" count="99" type="cond" truecount="2" falsecount="0"/>
+        <line num="77" count="99" type="cond" truecount="1" falsecount="0"/>
+        <line num="78" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="83" count="97" type="stmt"/>
+        <line num="84" count="99" type="stmt"/>
+        <line num="85" count="99" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+      </file>
+      <file name="button.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\button\button.view.tsx">
+        <metrics statements="27" coveredstatements="27" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="99" type="stmt"/>
+        <line num="7" count="99" type="stmt"/>
+        <line num="8" count="99" type="stmt"/>
+        <line num="9" count="99" type="stmt"/>
+        <line num="10" count="99" type="stmt"/>
+        <line num="11" count="99" type="stmt"/>
+        <line num="12" count="99" type="stmt"/>
+        <line num="13" count="99" type="stmt"/>
+        <line num="14" count="99" type="stmt"/>
+        <line num="15" count="99" type="stmt"/>
+        <line num="16" count="99" type="stmt"/>
+        <line num="17" count="99" type="stmt"/>
+        <line num="18" count="99" type="stmt"/>
+        <line num="19" count="99" type="stmt"/>
+        <line num="20" count="99" type="stmt"/>
+        <line num="21" count="99" type="stmt"/>
+        <line num="22" count="99" type="stmt"/>
+        <line num="23" count="99" type="stmt"/>
+        <line num="24" count="99" type="stmt"/>
+        <line num="25" count="99" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="99" type="stmt"/>
+        <line num="27" count="99" type="stmt"/>
+        <line num="29" count="99" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+      <file name="types.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\button\types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      </file>
+    </package>
+    <package name="src.shared.components.card">
+      <metrics statements="21" coveredstatements="21" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="card.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\card\card.styled.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      </file>
+      <file name="card.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\card\card.view.tsx">
+        <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="17" type="stmt"/>
+        <line num="13" count="17" type="stmt"/>
+        <line num="14" count="17" type="stmt"/>
+        <line num="15" count="17" type="stmt"/>
+        <line num="16" count="17" type="stmt"/>
+        <line num="17" count="17" type="stmt"/>
+        <line num="18" count="17" type="stmt"/>
+        <line num="19" count="17" type="stmt"/>
+        <line num="20" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="17" type="stmt"/>
+        <line num="22" count="17" type="stmt"/>
+        <line num="23" count="17" type="stmt"/>
+        <line num="25" count="17" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.popup">
+      <metrics statements="82" coveredstatements="82" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3"/>
+      <file name="popup.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\popup\popup.styled.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="59" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
+      </file>
+      <file name="popup.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\popup\popup.view.tsx">
+        <metrics statements="71" coveredstatements="71" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="16" type="stmt"/>
+        <line num="19" count="16" type="stmt"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="21" count="16" type="stmt"/>
+        <line num="22" count="16" type="stmt"/>
+        <line num="23" count="16" type="stmt"/>
+        <line num="24" count="16" type="stmt"/>
+        <line num="25" count="16" type="stmt"/>
+        <line num="28" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="10" type="stmt"/>
+        <line num="31" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="16" type="stmt"/>
+        <line num="36" count="16" type="stmt"/>
+        <line num="37" count="16" type="stmt"/>
+        <line num="40" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="41" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="46" count="10" type="stmt"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="48" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="16" type="stmt"/>
+        <line num="50" count="16" type="stmt"/>
+        <line num="51" count="16" type="stmt"/>
+        <line num="53" count="16" type="cond" truecount="3" falsecount="0"/>
+        <line num="55" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="57" count="16" type="stmt"/>
+        <line num="58" count="16" type="stmt"/>
+        <line num="59" count="16" type="stmt"/>
+        <line num="60" count="16" type="stmt"/>
+        <line num="61" count="16" type="stmt"/>
+        <line num="62" count="16" type="stmt"/>
+        <line num="63" count="16" type="stmt"/>
+        <line num="64" count="16" type="stmt"/>
+        <line num="65" count="16" type="stmt"/>
+        <line num="66" count="16" type="stmt"/>
+        <line num="67" count="16" type="stmt"/>
+        <line num="68" count="16" type="stmt"/>
+        <line num="69" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="70" count="16" type="stmt"/>
+        <line num="71" count="16" type="stmt"/>
+        <line num="73" count="16" type="stmt"/>
+        <line num="74" count="16" type="stmt"/>
+        <line num="76" count="16" type="stmt"/>
+        <line num="78" count="16" type="stmt"/>
+        <line num="79" count="16" type="stmt"/>
+        <line num="80" count="16" type="stmt"/>
+        <line num="81" count="16" type="stmt"/>
+        <line num="82" count="16" type="stmt"/>
+        <line num="83" count="16" type="stmt"/>
+        <line num="84" count="16" type="stmt"/>
+        <line num="85" count="16" type="stmt"/>
+        <line num="87" count="16" type="stmt"/>
+        <line num="88" count="16" type="stmt"/>
+        <line num="89" count="16" type="stmt"/>
+        <line num="90" count="16" type="stmt"/>
+        <line num="91" count="16" type="stmt"/>
+        <line num="92" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.select">
+      <metrics statements="34" coveredstatements="34" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
+      <file name="select.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\select\select.styled.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="select.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\select\select.view.tsx">
+        <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="16" type="stmt"/>
+        <line num="19" count="16" type="stmt"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="21" count="16" type="stmt"/>
+        <line num="22" count="16" type="stmt"/>
+        <line num="23" count="16" type="stmt"/>
+        <line num="24" count="16" type="stmt"/>
+        <line num="25" count="16" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="27" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="16" type="stmt"/>
+        <line num="29" count="16" type="stmt"/>
+        <line num="30" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="16" type="stmt"/>
+        <line num="32" count="16" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="84" type="stmt"/>
+        <line num="34" count="84" type="stmt"/>
+        <line num="35" count="84" type="stmt"/>
+        <line num="36" count="16" type="stmt"/>
+        <line num="37" count="16" type="stmt"/>
+        <line num="38" count="16" type="stmt"/>
+        <line num="40" count="16" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.separator">
+      <metrics statements="32" coveredstatements="32" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="separator.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\separator\separator.styled.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="3" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="28" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="27" type="stmt"/>
+        <line num="9" count="27" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="28" type="stmt"/>
+        <line num="17" count="28" type="stmt"/>
+        <line num="18" count="28" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="separator.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\separator\separator.view.tsx">
+        <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="28" type="stmt"/>
+        <line num="7" count="28" type="stmt"/>
+        <line num="8" count="28" type="stmt"/>
+        <line num="9" count="28" type="stmt"/>
+        <line num="10" count="28" type="stmt"/>
+        <line num="11" count="28" type="stmt"/>
+        <line num="12" count="28" type="stmt"/>
+        <line num="13" count="28" type="stmt"/>
+        <line num="14" count="28" type="stmt"/>
+        <line num="15" count="28" type="stmt"/>
+        <line num="16" count="28" type="stmt"/>
+        <line num="17" count="28" type="stmt"/>
+        <line num="18" count="28" type="stmt"/>
+        <line num="19" count="28" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="28" type="stmt"/>
+        <line num="22" count="28" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+      <file name="types.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\separator\types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      </file>
+    </package>
+    <package name="src.shared.components.typography">
+      <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
+      <file name="types.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\typography\types.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      </file>
+      <file name="typography.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\typography\typography.styled.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="5" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="337" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="337" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="337" type="cond" truecount="2" falsecount="1"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="typography.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\typography\typography.view.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="337" type="stmt"/>
+        <line num="7" count="337" type="stmt"/>
+        <line num="8" count="337" type="stmt"/>
+        <line num="9" count="337" type="stmt"/>
+        <line num="10" count="337" type="stmt"/>
+        <line num="11" count="337" type="stmt"/>
+        <line num="12" count="337" type="stmt"/>
+        <line num="13" count="337" type="stmt"/>
+        <line num="15" count="337" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.hooks">
+      <metrics statements="35" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\hooks\index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="use-breakpoint.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\hooks\use-breakpoint.ts">
+        <metrics statements="34" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.shared.components.typography">
-      <metrics statements="28" coveredstatements="28" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <file name="types.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\typography\types.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      </file>
-      <file name="typography.styled.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\typography\typography.styled.ts">
-        <metrics statements="13" coveredstatements="13" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="9" count="8" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
-        <line num="11" count="8" type="stmt"/>
-        <line num="12" count="8" type="stmt"/>
-        <line num="13" count="8" type="stmt"/>
-        <line num="14" count="8" type="stmt"/>
-        <line num="15" count="8" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-      </file>
-      <file name="typography.view.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\components\typography\typography.view.tsx">
-        <metrics statements="15" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="9" count="8" type="stmt"/>
-        <line num="10" count="8" type="stmt"/>
-        <line num="11" count="8" type="stmt"/>
-        <line num="12" count="8" type="stmt"/>
-        <line num="13" count="8" type="stmt"/>
-        <line num="14" count="8" type="stmt"/>
-        <line num="15" count="8" type="stmt"/>
-        <line num="17" count="8" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.shared.testing">
-      <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="render-with-providers.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\testing\render-with-providers.tsx">
-        <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+    <package name="src.shared.theme">
+      <metrics statements="26" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="media-sizes.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\theme\media-sizes.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="12" type="stmt"/>
-        <line num="8" count="12" type="stmt"/>
-        <line num="9" count="12" type="stmt"/>
-        <line num="10" count="12" type="stmt"/>
-        <line num="11" count="12" type="stmt"/>
-        <line num="12" count="12" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
       </file>
-    </package>
-    <package name="src.shared.theme">
-      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="palettes.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\theme\palettes.ts">
-        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -353,16 +1596,113 @@
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.shared.utils">
-      <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="63" coveredstatements="37" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="3"/>
+      <file name="format-compact-value.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\utils\format-compact-value.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="33" type="stmt"/>
+        <line num="3" count="33" type="stmt"/>
+        <line num="4" count="33" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\utils\index.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
       <file name="px-to-rem.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\utils\px-to-rem.ts">
         <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="10" type="stmt"/>
-        <line num="3" count="10" type="stmt"/>
+        <line num="2" count="253" type="stmt"/>
+        <line num="3" count="253" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="px-to-vh.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\utils\px-to-vh.ts">
+        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="px-to-vw.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\utils\px-to-vw.ts">
+        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="trap-focus.ts" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\shared\utils\trap-focus.ts">
+        <metrics statements="37" coveredstatements="19" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.tests">
+      <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="render-with-providers.tsx" path="C:\Users\KROTON\Downloads\projects\mercadolibre\mercadolibretest\src\tests\render-with-providers.tsx">
+        <metrics statements="12" coveredstatements="12" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="64" type="stmt"/>
+        <line num="8" count="64" type="stmt"/>
+        <line num="9" count="64" type="stmt"/>
+        <line num="10" count="64" type="stmt"/>
+        <line num="11" count="64" type="stmt"/>
+        <line num="12" count="64" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
     </package>
   </project>

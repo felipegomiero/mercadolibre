@@ -1,0 +1,496 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/pages/services/mocks.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/pages/services</a> mocks.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/116</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/116</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { IDetail } from "../types";
+&nbsp;
+<span class="cstat-no" title="statement not covered" >const mockBreadCrumbsItems = [</span>
+<span class="cstat-no" title="statement not covered" >	{ label: "Celulares e telefones" },</span>
+<span class="cstat-no" title="statement not covered" >	{ label: "Celulares e smartphones" },</span>
+<span class="cstat-no" title="statement not covered" >	{ label: "Samsung" },</span>
+<span class="cstat-no" title="statement not covered" >];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >const mockItem: IDetail = {</span>
+<span class="cstat-no" title="statement not covered" >	title: "Samsung Galaxy S24 Galaxy Ai 256GB Preto 8GB RAM",</span>
+<span class="cstat-no" title="statement not covered" >	price: "R$ 3.438",</span>
+<span class="cstat-no" title="statement not covered" >	stock: 56,</span>
+<span class="cstat-no" title="statement not covered" >	shippingPromSecLeft: 104500,</span>
+<span class="cstat-no" title="statement not covered" >	evaluation: {</span>
+<span class="cstat-no" title="statement not covered" >		stars: 2.5,</span>
+<span class="cstat-no" title="statement not covered" >		qty: 34567,</span>
+<span class="cstat-no" title="statement not covered" >	},</span>
+<span class="cstat-no" title="statement not covered" >	qtySold: 100450,</span>
+<span class="cstat-no" title="statement not covered" >	seller: {</span>
+<span class="cstat-no" title="statement not covered" >		title: "Samsung",</span>
+<span class="cstat-no" title="statement not covered" >		verified: true,</span>
+<span class="cstat-no" title="statement not covered" >		qtyProducts: 10000000,</span>
+<span class="cstat-no" title="statement not covered" >		status: {</span>
+<span class="cstat-no" title="statement not covered" >			title: "MercadoLíder Premium",</span>
+<span class="cstat-no" title="statement not covered" >			desc: "É um dos melhores do site!",</span>
+<span class="cstat-no" title="statement not covered" >			qtySold: 12591309,</span>
+<span class="cstat-no" title="statement not covered" >			csStatus: "Bom",</span>
+<span class="cstat-no" title="statement not covered" >			deliverOnTime: true,</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >	},</span>
+<span class="cstat-no" title="statement not covered" >	paymentMethods: {</span>
+<span class="cstat-no" title="statement not covered" >		debit: [</span>
+<span class="cstat-no" title="statement not covered" >			{</span>
+<span class="cstat-no" title="statement not covered" >				title: "ELO",</span>
+<span class="cstat-no" title="statement not covered" >				companyLogo:</span>
+<span class="cstat-no" title="statement not covered" >					"https://http2.mlstatic.com/storage/logos-api-admin/d2407420-f3bd-11eb-8e0d-6f4af49bf82e-m.svg",</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >		],</span>
+<span class="cstat-no" title="statement not covered" >		credit: [</span>
+<span class="cstat-no" title="statement not covered" >			{</span>
+<span class="cstat-no" title="statement not covered" >				title: "MasterCard",</span>
+<span class="cstat-no" title="statement not covered" >				installments: 12,</span>
+<span class="cstat-no" title="statement not covered" >				companyLogo:</span>
+<span class="cstat-no" title="statement not covered" >					"https://http2.mlstatic.com/storage/logos-api-admin/aa2b8f70-5c85-11ec-ae75-df2bef173be2-m.svg",</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >			{</span>
+<span class="cstat-no" title="statement not covered" >				title: "Visa",</span>
+<span class="cstat-no" title="statement not covered" >				installments: 8,</span>
+<span class="cstat-no" title="statement not covered" >				companyLogo:</span>
+<span class="cstat-no" title="statement not covered" >					"https://http2.mlstatic.com/storage/logos-api-admin/a5f047d0-9be0-11ec-aad4-c3381f368aaf-m.svg",</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >		],</span>
+<span class="cstat-no" title="statement not covered" >		others: [</span>
+<span class="cstat-no" title="statement not covered" >			{</span>
+<span class="cstat-no" title="statement not covered" >				title: "PIX",</span>
+<span class="cstat-no" title="statement not covered" >				desc: "Aprovação imediata",</span>
+<span class="cstat-no" title="statement not covered" >				companyLogo:</span>
+<span class="cstat-no" title="statement not covered" >					"https://http2.mlstatic.com/storage/logos-api-admin/f99fcca0-f3bd-11eb-9984-b7076edb0bb7-m.svg",</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >			{</span>
+<span class="cstat-no" title="statement not covered" >				title: "Boleto bancário",</span>
+<span class="cstat-no" title="statement not covered" >				desc: "Ao comprar, explicaremos como fazer o pagamento em qualquer agência bancária, caixa eletrônico, Internet Banking ou correspondentes bancários.",</span>
+<span class="cstat-no" title="statement not covered" >				companyLogo:</span>
+<span class="cstat-no" title="statement not covered" >					"https://http2.mlstatic.com/storage/logos-api-admin/00174300-571e-11e8-8364-bff51f08d440-m.svg",</span>
+<span class="cstat-no" title="statement not covered" >			},</span>
+<span class="cstat-no" title="statement not covered" >		],</span>
+<span class="cstat-no" title="statement not covered" >	},</span>
+<span class="cstat-no" title="statement not covered" >	images: [</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			alt: "Samsung galaxy s24 256gb",</span>
+<span class="cstat-no" title="statement not covered" >			src: "https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-s24-62-galaxy-ai-256gb-preto-5g-8gb-ram-cam-tripla-50mp-selfie-12mp-bateria-4000mah-dual-chip/magazineluiza/238095300/e7d6a769c701da9491194643ae02c865.jpg",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			alt: "Samsung Cores",</span>
+<span class="cstat-no" title="statement not covered" >			src: "https://http2.mlstatic.com/D_NQ_NP_942153-MLA83864739934_042025-O.webp",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			alt: "Samsung AI",</span>
+<span class="cstat-no" title="statement not covered" >			src: "https://http2.mlstatic.com/D_NQ_NP_692256-MLA83864680656_042025-O.webp",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			alt: "Samsung câmera",</span>
+<span class="cstat-no" title="statement not covered" >			src: "https://http2.mlstatic.com/D_NQ_NP_828777-MLA83864710362_042025-O.webp",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			alt: "Samsung config",</span>
+<span class="cstat-no" title="statement not covered" >			src: "https://http2.mlstatic.com/D_NQ_NP_623102-MLA83864680674_042025-O.webp",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			alt: "Samsung acessórios",</span>
+<span class="cstat-no" title="statement not covered" >			src: "https://http2.mlstatic.com/D_NQ_NP_810783-MLA83864720268_042025-O.webp",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >	],</span>
+<span class="cstat-no" title="statement not covered" >	keyFeatures: [</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			desc: "Memória RAM: 8 GB",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			desc: "Dispositivo desbloqueado para que você escolha a companhia telefônica de sua preferência.",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			desc: "Compatível com redes 5G.",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			desc: 'Tela AMOLED Dinamico 2X de 6.2".',</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			desc: "Tem 3 câmeras traseiras de 50Mpx/12Mpx/10Mpx.",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			desc: "Câmeras frontais de 12.0 MP.",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >		{</span>
+<span class="cstat-no" title="statement not covered" >			desc: "Bateria de 4000mAh.",</span>
+<span class="cstat-no" title="statement not covered" >		},</span>
+<span class="cstat-no" title="statement not covered" >	],</span>
+<span class="cstat-no" title="statement not covered" >	desc: `Celular Samsung Galaxy A06 com tela de 6.7", 128GB, 4GB de RAM, Câmera Traseira de 50MP, Câmera Frontal de 8MP, Bateria de 5000mAh, Dual Chip, Android&lt;br&gt;&lt;br&gt;</span>
+&nbsp;
+O Galaxy A06 foi feito com tudo que você precisa para acompanhar e assistir seus conteúdos favoritos.&lt;br&gt;&lt;br&gt;
+&nbsp;
+Feito para durar e atualizado por mais tempo, o Galaxy A06 oferece uma experiência duradoura e segura com o seu aparelho, assegurando até 2 atualizações de sistema operacional Android e até 4 anos de atualizações de Segurança. Fora isso, a sua proteção é aprimorada de seus dados e apps mais seguros por Knox Vault, garantindo que dados confidenciais e sigilosos permaneçam seguros, e com Cadeado Galaxy, protegendo os seus dados e acessos a aplicativos por terceiros.&lt;br&gt;&lt;br&gt;
+&nbsp;
+Com uma grande tela HD+ de 6.7”, esse celular garante uma visualização imersiva nos seus conteúdos, que terão uma transição mais fluida graças a taxa de atualização de 60Hz.&lt;br&gt;&lt;br&gt;
+O Galaxy A06 apresenta um design com acabamento elegante e oferece 3 opções de cores para você escolher a que mais combina com você: Azul Escuro, Branco e Verde.&lt;br&gt;&lt;br&gt;
+&nbsp;
+Com um desempenho absurdo, experimente a potência do processador Mediatek | MT6177M, armazenamento de 128GB e memória RAM de 4GB até 8GB utilizando RAM Plus.&lt;br&gt;&lt;br&gt;
+&nbsp;
+Com um design fino e moderno o, Galaxy A06 ainda conta com o a nova função de leitor de impressão de digital.&lt;br&gt;&lt;br&gt;
+&nbsp;
+A sua Câmera Dupla de até 50MP e a Selfie de 8MP garantem diversas possibilidades para que as suas fotos fiquem incríveis.&lt;br&gt;&lt;br&gt;
+&nbsp;
+Esse aparelho te acompanha em todos os momentos com a sua bateria de 5.000 mAh, que dura até dois dias de uso, e um Carregamento Rápido de até 25W, para que você não precise passar muito tempo ao lado da tomada. Assim, você pode assistir a conteúdos, realizar diversos downloads e utilizar o seu celular sem faltar energia.&lt;br&gt;&lt;br&gt;
+&nbsp;
+Com o aplicativo SmartSwitch você transfere de forma fácil e prática o conteúdo do seu celular anterior (fotos, contatos, eventos do calendário, notas, configurações do dispositivo e muito mais) para o seu novo Galaxy A06.`,
+<span class="cstat-no" title="statement not covered" >};</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >export default { mockBreadCrumbsItems, mockItem };</span>
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-06-01T21:00:13.716Z
+            </div>
+        <script src="../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
+    </body>
+</html>
+    
