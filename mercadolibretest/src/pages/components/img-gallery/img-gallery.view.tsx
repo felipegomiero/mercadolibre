@@ -8,13 +8,17 @@ const ImgGallery: React.FC<{ images: IImg[] }> = ({ images }) => {
 	const [displayImg, setDisplayImg] = useState<IImg>(images?.[0]);
 	const theme = useTheme();
 	return (
-		<>
+		<section
+			data-testid="img-gallery"
+			aria-labelledby="galeria-imagens"
+			role="region">
 			<ImgMagnifier src={displayImg?.src} />
 
 			<Styled.Wrapper>
 				{images?.map(({ alt, src }) => {
 					return (
 						<Styled.ImgCard
+							key={alt}
 							theme={theme}
 							aria-label={alt}
 							bgSrc={src}
@@ -24,7 +28,7 @@ const ImgGallery: React.FC<{ images: IImg[] }> = ({ images }) => {
 					);
 				})}
 			</Styled.Wrapper>
-		</>
+		</section>
 	);
 };
 

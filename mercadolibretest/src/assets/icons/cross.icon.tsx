@@ -11,6 +11,7 @@ const CrossIcon: React.FC<CrossIconProps> = ({
 }) => {
 	return (
 		<svg
+			data-testid="cross-icon"
 			width={size}
 			height={size}
 			viewBox="0 0 24 24"

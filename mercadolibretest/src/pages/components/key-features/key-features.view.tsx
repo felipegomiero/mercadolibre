@@ -7,7 +7,7 @@ const KeyFeatures: React.FC<{ keyFeatures: IKeyFeature[] }> = ({
 }) => {
 	return (
 		<section
-			data-testid="key=features"
+			data-testid="key-features"
 			aria-labelledby="caracteriscas-chave-produto">
 			<Typography as="h4" pxFontSize={null} margin="24px 0 8px 0">
 				O que você precisa saber sobre este produto

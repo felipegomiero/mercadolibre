@@ -27,6 +27,7 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 	const onMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
 		const elem = event.currentTarget;
 		const { top, left } = elem.getBoundingClientRect();
+		/* calculates image in glass position based on page size and scroll */
 		const x = event.pageX - left - window.pageXOffset;
 		const y = event.pageY - top - window.pageYOffset;
 		setXY([x, y]);
@@ -34,6 +35,7 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 
 	const onMouseEnter = (event: React.MouseEvent<HTMLDivElement>) => {
 		const elem = event.currentTarget;
+		/* sets image size */
 		const { width, height } = elem.getBoundingClientRect();
 		setSize([width, height]);
 		setShowMagnifier(true);
@@ -42,6 +44,7 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 	return (
 		<Styled.Wrapper>
 			<Styled.ImgContainer
+				role="img"
 				width={imgSize?.width}
 				height={imgSize?.height}
 				src={src}
@@ -50,6 +53,7 @@ const ImgMagnifier: React.FC<IImgMagnifier> = ({
 				onMouseLeave={onMouseLeave}
 			/>
 			<Styled.MagnifierGlass
+				data-testid="magnifier-glass"
 				showMagnifier={showMagnifier}
 				magnifierSize={magnifierSize}
 				x={x}

@@ -54,7 +54,7 @@ const PaymentMethodsModal: React.FC<IPaymentMethodModal> = ({
 				{debit.length > 0 && (
 					<Card borderColor={theme.neutral[500]}>
 						<Typography as="h4" pxFontSize={null}>
-							Cartão de crédito
+							Cartão de débito
 						</Typography>
 						<Typography pxFontSize={14} color={theme.neutral[600]}>
 							Aprovação imediata

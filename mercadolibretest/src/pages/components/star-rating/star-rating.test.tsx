@@ -1,7 +1,16 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import StarRating from "./star-rating";
 import renderWithProviders from "../../../tests/render-with-providers";
+import { mercadoLibrePalette } from "../../../shared/theme/palettes";
+
+vi.mock("@emotion/react", async () => {
+	const actual = await vi.importActual("@emotion/react");
+	return {
+		...actual,
+		useTheme: () => mercadoLibrePalette,
+	};
+});
 
 describe("<StarRating />", () => {
 	it("renders with default props", () => {

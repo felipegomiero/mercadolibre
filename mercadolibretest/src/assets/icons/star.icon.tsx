@@ -7,6 +7,7 @@ interface StarIconProps {
 	label?: string;
 	decorative?: boolean;
 	className?: string;
+	dataTestId?: string;
 }
 
 const StarIcon: React.FC<StarIconProps> = ({
@@ -17,6 +18,7 @@ const StarIcon: React.FC<StarIconProps> = ({
 	strokeColor,
 	label = "Icone de estrela",
 	decorative = true,
+	dataTestId = "star icon",
 	className,
 }) => {
 	const titleId = `star-icon-title-${Math.random()
@@ -25,6 +27,7 @@ const StarIcon: React.FC<StarIconProps> = ({
 
 	return (
 		<svg
+			data-testid={dataTestId}
 			className={className}
 			width={size}
 			height={size}

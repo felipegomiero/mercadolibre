@@ -24,7 +24,7 @@ const Select = <T extends string | number>({
 }: SelectProps<T>): ReturnType<React.FC<SelectProps<T>>> => {
 	return (
 		<Styled.Wrapper className={className}>
-			{label && <label>{label}:</label>}
+			{label && <span>{label}:</span>}
 			<Styled.Select
 				value={value}
 				onChange={(e) => onChange(e.target.value as T)}

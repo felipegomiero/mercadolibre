@@ -29,6 +29,9 @@ const StarRating: React.FC<StarRatingProps> = ({ value = 0, qty = 0 }) => {
 					const isHalf = index > trueValue && trueValue > index - 1;
 					return (
 						<StarIcon
+							dataTestId={`star-${
+								isHalf ? "half" : isFilled ? "filled" : "empty"
+							}`}
 							key={index}
 							color={theme.secondary[400]}
 							filled={isFilled}

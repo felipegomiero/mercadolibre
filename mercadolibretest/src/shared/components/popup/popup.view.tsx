@@ -52,9 +52,16 @@ export const Popup: React.FC<PopupProps> = ({
 
 	if (!isOpen) return null;
 
+	const portalRoot = document.getElementById("portal-root") || document.body;
+
 	return ReactDOM.createPortal(
-		<Styled.Overlay role="presentation" onClick={onClose} aria-hidden="true">
+		<Styled.Overlay
+			data-testid="popup-overlay"
+			role="presentation"
+			onClick={onClose}
+			aria-hidden="true">
 			<Styled.Content
+				data-testid="popup-content"
 				role="dialog"
 				aria-modal="true"
 				aria-labelledby={titleId}
@@ -80,6 +87,6 @@ export const Popup: React.FC<PopupProps> = ({
 				{children}
 			</Styled.Content>
 		</Styled.Overlay>,
-		document.body
+		portalRoot
 	);
 };

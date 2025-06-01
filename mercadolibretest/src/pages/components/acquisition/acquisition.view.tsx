@@ -32,7 +32,7 @@ const Acquisition: React.FC<IAcquisition> = ({
 	const timeLeft = useCountDownTime(shippingPromSecLeft);
 
 	return (
-		<Styled.Wrapper>
+		<Styled.Wrapper data-testid="acquisition">
 			<Styled.ShippingWrapper>
 				<Styled.FlexCol>
 					<Typography as="h3" color={theme.success[500]} margin="0 0 4px 0">

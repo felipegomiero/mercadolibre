@@ -19,6 +19,7 @@ const VerifiedIcon: React.FC<VerifiedIconProps> = ({
 
 	return (
 		<svg
+			data-testid="verified-icon"
 			className={className}
 			width={size}
 			height={size}

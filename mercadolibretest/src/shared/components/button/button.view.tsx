@@ -14,6 +14,7 @@ const Button: React.FC<IButtonProps> = ({
 	const theme = useTheme();
 	return (
 		<Styled.Button
+			role="button"
 			className={className}
 			variant={variant}
 			type={type}
