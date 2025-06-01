@@ -11,11 +11,7 @@ const SellerInfo = ({ title, verified, qtyProducts, status }: ISeller) => {
 		<Styled.CustomCard>
 			<Styled.FlexItems>
 				<Typography as="h4">{title}</Typography>
-				{verified && (
-					<Typography color={theme.neutral[600]} pxFontSize={12}>
-						<VerifiedIcon size={16} /> Loja oficial do Mercado Libre
-					</Typography>
-				)}
+
 				<Typography color={theme.neutral[600]} pxFontSize={12}>
 					+
 					<Typography
@@ -27,6 +23,18 @@ const SellerInfo = ({ title, verified, qtyProducts, status }: ISeller) => {
 					Produtos
 				</Typography>
 
+				{verified && (
+					<Styled.Flex>
+						<VerifiedIcon size={20} />
+						<Typography
+							color={theme.neutral[600]}
+							pxFontSize={12}
+							margin="0 0 0 8px">
+							Loja oficial
+						</Typography>
+					</Styled.Flex>
+				)}
+
 				<Button variant="link">
 					<Typography pxFontSize={12} color={theme.secondary[500]}>
 						Veja o site oficial
@@ -34,10 +42,10 @@ const SellerInfo = ({ title, verified, qtyProducts, status }: ISeller) => {
 				</Button>
 			</Styled.FlexItems>
 
-			<Separator margin="0 24px" />
+			<Separator thickness="2px" margin="0 12px" />
 
-			<Styled.CenterFlexCol>
-				<Typography color={theme.success[500]} pxFontSize={14}>
+			<Styled.SellerStatus>
+				<Typography as="h5" color={theme.success[500]} pxFontSize={null}>
 					{status.title}
 				</Typography>
 				<Typography color={theme.neutral[600]} pxFontSize={12}>
@@ -45,32 +53,34 @@ const SellerInfo = ({ title, verified, qtyProducts, status }: ISeller) => {
 				</Typography>
 
 				<Styled.SellerStamps>
-					<Styled.CenterFlexCol>
-						<Typography color={theme.success[500]} pxFontSize={14}>
+					<Styled.Stamp>
+						<Typography color={theme.success[500]} pxFontSize={12}>
 							{formatCompactValue(status.qtySold)}
 						</Typography>
 						<Typography color={theme.neutral[600]} pxFontSize={12}>
 							Vendas
 						</Typography>
-					</Styled.CenterFlexCol>
+					</Styled.Stamp>
 
-					<Styled.CenterFlexCol>
-						<Typography color={theme.success[500]} pxFontSize={14}>
+					<Styled.Stamp>
+						<Typography color={theme.success[500]} pxFontSize={12}>
 							{status.csStatus}
 						</Typography>
 						<Typography color={theme.neutral[600]} pxFontSize={12}>
 							Atendimento
 						</Typography>
-					</Styled.CenterFlexCol>
+					</Styled.Stamp>
 
-					<Styled.CenterFlexCol>
-						<VerifiedIcon size={16} color={theme.success[500]} />
+					<Styled.Stamp>
+						<Styled.IconWrapper>
+							<VerifiedIcon size={20} color={theme.success[500]} />
+						</Styled.IconWrapper>
 						<Typography color={theme.neutral[600]} pxFontSize={12}>
-							No prazo
+							Entregas no prazo
 						</Typography>
-					</Styled.CenterFlexCol>
+					</Styled.Stamp>
 				</Styled.SellerStamps>
-			</Styled.CenterFlexCol>
+			</Styled.SellerStatus>
 		</Styled.CustomCard>
 	);
 };

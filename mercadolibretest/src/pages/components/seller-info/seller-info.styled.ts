@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Card } from "../../../shared/components";
+import { mediaDesktop } from "../../../shared/theme/media-sizes";
 
 export const FlexCol = styled.div`
 	display: flex;
@@ -7,30 +8,52 @@ export const FlexCol = styled.div`
 `;
 
 export const FlexItems = styled(FlexCol)`
+	width: 50%;
+	@media (${mediaDesktop}) {
+		width: 100%;
+	}
 	justify-content: space-between;
 	> :not(:last-child) {
 		display: flex;
 		align-items: center;
-		margin-bottom: 4px;
+		margin-bottom: 8px;
 	}
 `;
 
 export const CustomCard = styled(Card)`
 	display: flex;
 	margin-top: 24px;
-	> :first-child,
-	> :last-child {
-		width: 50%;
-	}
 `;
 
 export const SellerStamps = styled.div`
-	display: flex;
-	justify-content: space-between;
+	display: block;
 	width: 100%;
 	margin-top: 8px;
+	> :not(:last-of-type) {
+		margin-bottom: 8px;
+	}
 `;
 
-export const CenterFlexCol = styled(FlexCol)`
+export const Flex = styled.div`
+	display: flex;
 	align-items: center;
+`;
+
+export const SellerStatus = styled(FlexCol)`
+	width: 50%;
+	@media (${mediaDesktop}) {
+		width: 100%;
+	}
+`;
+
+export const Stamp = styled.div`
+	display: flex;
+	> :first-child {
+		width: 40px;
+	}
+`;
+
+export const IconWrapper = styled.div`
+	display: flex;
+	justify-content: flex-start;
 `;

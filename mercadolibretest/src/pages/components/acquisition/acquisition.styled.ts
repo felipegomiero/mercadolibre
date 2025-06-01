@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
 	display: block;
 	height: 100%;
 	width: 100%;
+	margin-top: 24px;
 	> :not(:last-child) {
 		margin-bottom: 16px;
 	}

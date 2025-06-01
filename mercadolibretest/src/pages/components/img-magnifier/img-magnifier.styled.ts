@@ -21,6 +21,7 @@ interface BackgroundImg {
 export const Wrapper = styled.div`
 	position: relative;
 	display: inline-block;
+	width: 100%;
 `;
 
 export const MagnifierGlass = styled.div(
@@ -63,11 +64,10 @@ export const ImgContainer = styled.div<ImgContainer>`
 	display block;
   background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
 	${({ src }) => `background-image: url('${src}');`}
 
 	@media (${mediaMobile}) {
-		min-width: 100vw;
-		min-height: 90vh;
+		min-width: 90vw;
 	}
 `;

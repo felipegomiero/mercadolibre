@@ -3,9 +3,7 @@ import ImgMagnifier from "./components/img-magnifier/img-magnifier.view";
 import TopNav from "./components/top-nav/top-nav.view";
 import Details from "./components/details/details.view";
 import * as Styled from "./item-detail.page.styled";
-import Acquisition from "./components/acquisition/acquisition.view";
-import { Separator, Typography } from "../shared/components";
-import SellerInfo from "./components/seller-info/seller-info";
+import { Typography } from "../shared/components";
 import mocks from "./services/mocks";
 import { useTheme } from "@emotion/react";
 import parse from "html-react-parser";
@@ -22,17 +20,9 @@ const ItemDetailPage = () => {
 				<Styled.ItemWrapper>
 					<Styled.Block>
 						{item.image && <ImgMagnifier src={item.image} />}
-						<SellerInfo {...item.seller} />
 					</Styled.Block>
 
 					<Details {...item} />
-
-					<Separator margin="0" thickness="4px" />
-
-					<Acquisition
-						stock={item.stock}
-						shippingPromSecLeft={item.shippingPromSecLeft}
-					/>
 				</Styled.ItemWrapper>
 
 				<Typography as="h2" pxFontSize={null} margin="24px 0">

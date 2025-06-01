@@ -2,6 +2,7 @@ import React from "react";
 import * as Styled from "./breadcrumbs.styled";
 import { useTheme } from "@emotion/react";
 import { Button, Separator, Typography } from "../../../shared/components";
+import { useBreakpoint } from "../../../shared/hooks";
 interface IBreadcrumbItem {
 	label: string;
 	to?: string;
@@ -18,6 +19,7 @@ const Breadcrumbs: React.FC<IBreadcrumbsProps> = ({
 	separator = ">",
 }) => {
 	const theme = useTheme();
+	const { isMobile } = useBreakpoint();
 	return (
 		<Styled.Wrapper>
 			<Button variant="link">
@@ -28,19 +30,20 @@ const Breadcrumbs: React.FC<IBreadcrumbsProps> = ({
 				<Styled.Ol>
 					{items.map((item, index) => {
 						const isLast = index === items.length - 1;
-
 						return (
 							<Styled.Li key={index}>
-								{!isLast ? (
+								{!isLast && !isMobile ? (
 									<Styled.LinkA to={item?.to || ""} onClick={item.onClick}>
 										{item.label}
 									</Styled.LinkA>
 								) : (
-									<Styled.Text isLast={isLast} theme={theme}>
-										{item.label}
-									</Styled.Text>
+									isLast && (
+										<Styled.Text isLast={isLast} theme={theme}>
+											{item.label}
+										</Styled.Text>
+									)
 								)}
-								{!isLast && (
+								{!isLast && !isMobile && (
 									<Styled.BreadcrumbSeparator>
 										{separator}
 									</Styled.BreadcrumbSeparator>

@@ -6,6 +6,8 @@ import * as Styled from "./details.styled";
 import { formatCompactValue } from "../../../shared/utils";
 import { useState } from "react";
 import PaymentMethodsModal from "../payment-methods-modal/payment-methods-modal.view";
+import Acquisition from "../acquisition/acquisition.view";
+import SellerInfo from "../seller-info/seller-info";
 
 const Details: React.FC<IDetail> = ({
 	title,
@@ -13,6 +15,9 @@ const Details: React.FC<IDetail> = ({
 	evaluation,
 	qtySold,
 	paymentMethods,
+	stock,
+	shippingPromSecLeft,
+	seller,
 }) => {
 	const theme = useTheme();
 	const [paymentPopup, setPaymentPopUp] = useState<boolean>(false);
@@ -31,7 +36,7 @@ const Details: React.FC<IDetail> = ({
 			</Typography>
 			<Button variant="link" onClick={() => setPaymentPopUp(true)}>
 				<Typography pxFontSize={14} color={theme.secondary[500]}>
-					Ver outras formas de pagamento
+					Ver formas de pagamento
 				</Typography>
 			</Button>
 
@@ -42,6 +47,10 @@ const Details: React.FC<IDetail> = ({
 					{qtySoldLbl}
 				</Typography>
 			</Styled.EvaluationWrapper>
+
+			<Acquisition stock={stock} shippingPromSecLeft={shippingPromSecLeft} />
+
+			<SellerInfo {...seller} />
 
 			<PaymentMethodsModal
 				isOpen={paymentPopup}
