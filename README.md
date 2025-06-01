@@ -8,8 +8,8 @@ Este documento explica como configurar e executar o projeto `mercadolibretest` l
 
 ## Requisitos
 
-- Node.js (versão recomendada >= 18)
-- npm (gerenciador de pacotes do Node.js)
+- Node.js (versão recomendada >= 18) (versão utilizada para desenvolvimento v24.1.0)
+- npm (gerenciador de pacotes do Node.js) (versão utilizada para desenvolvimento v11.3.0)
 
 ---
 
