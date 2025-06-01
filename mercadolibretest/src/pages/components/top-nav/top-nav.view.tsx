@@ -4,7 +4,7 @@ import * as Styled from "./top-nav.styled";
 
 const TopNav = () => {
 	return (
-		<Styled.TopNav>
+		<Styled.TopNav data-testid="top-nav" role="banner">
 			<Styled.TopNavWrapper>
 				<Styled.Logo data-testid="logo" />
 

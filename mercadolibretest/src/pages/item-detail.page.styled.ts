@@ -15,7 +15,7 @@ export const ItemWrapper = styled.div`
 	}
 `;
 
-export const Content = styled.div`
+export const Content = styled.main`
 	padding: 24px 0;
 	width: 100%;
 	max-width: 90vw;

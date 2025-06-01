@@ -15,7 +15,7 @@ const StarRating: React.FC<StarRatingProps> = ({ value = 0, qty = 0 }) => {
 	const theme = useTheme();
 
 	return (
-		<Styled.FlexAlignCenter>
+		<Styled.FlexAlignCenter data-testid="star-rating">
 			<Typography
 				pxFontSize={14}
 				color={theme.neutral[700]}

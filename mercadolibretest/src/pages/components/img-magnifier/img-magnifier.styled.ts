@@ -59,7 +59,7 @@ export const MagnifierGlass = styled.div(
 export const ImgContainer = styled.div<ImgContainer>`
 	${({ width }) => `width: ${width || "auto"};`}
 	${({ height }) => `height: ${height || "auto"};`}
-	min-height: 450px;
+	min-height: 70vh;
 	min-width: 35vw;
 	display block;
   background-repeat: no-repeat;
@@ -69,5 +69,6 @@ export const ImgContainer = styled.div<ImgContainer>`
 
 	@media (${mediaMobile}) {
 		min-width: 90vw;
+		min-height: 35vh;
 	}
 `;

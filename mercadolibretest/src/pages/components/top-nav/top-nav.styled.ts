@@ -1,7 +1,7 @@
 import type { Theme } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const TopNav = styled.div`
+export const TopNav = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: center;

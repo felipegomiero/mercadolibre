@@ -17,7 +17,7 @@ export interface ISeller {
 		desc: string;
 		qtySold: number;
 		csStatus: string;
-		deliveOnTime: boolean;
+		deliverOnTime: boolean;
 	};
 }
 
@@ -34,13 +34,23 @@ export interface IPaymentMethods {
 	others: IPaymentMethod[];
 }
 
+export interface IImg {
+	alt: string;
+	src: string;
+}
+
+export interface IKeyFeature {
+	desc: string;
+}
+
 export interface IDetail extends IAcquisition {
 	title: string;
 	price: string;
-	image: string;
+	images: IImg[];
 	evaluation: IEvaluation;
 	seller: ISeller;
 	qtySold: number;
 	desc: string;
 	paymentMethods: IPaymentMethods;
+	keyFeatures: IKeyFeature[];
 }

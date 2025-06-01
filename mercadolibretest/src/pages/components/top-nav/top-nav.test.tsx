@@ -4,12 +4,21 @@ import { describe, it, expect } from "vitest";
 import renderWithProviders from "../../../tests/render-with-providers";
 
 describe("TopNav component", () => {
-	it("renders all 3 buttons", () => {
+	it("renders the logo, 3 buttons, and the shopping cart icon", () => {
 		renderWithProviders(<TopNav />);
 
+		// Acessibilidade AAA: verificar região semântica
+		expect(screen.getByRole("banner")).toBeInTheDocument();
+
 		expect(screen.getByTestId("logo")).toBeInTheDocument();
-		expect(screen.getByText("Minha conta")).toBeInTheDocument();
-		expect(screen.getByText("Compras")).toBeDisabled();
+
+		// Usar getByRole com name para acessibilidade
+		expect(
+			screen.getByRole("button", { name: /minha conta/i })
+		).toBeInTheDocument();
+		expect(screen.getByRole("button", { name: /compras/i })).toBeDisabled();
+
+		// Verifica ícone de carrinho se tiver data-testid
 		expect(screen.getByTestId("shopping-cart-icon")).toBeInTheDocument();
 	});
 });
